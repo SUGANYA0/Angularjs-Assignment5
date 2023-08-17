@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="name" ng-controller="control">
+        <button ng-click="gotoPage('/myInfo')">My Info</button>
+        <button ng-click="gotoPage('/signUp')">Sign Up</button><br><br>
+        <div ng-view></div>
+    </div>
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="https://code.angularjs.org/snapshot/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="main.controller.js"></script>
+    <script src="signUp/signUp.controller.js"></script>
+    <script src="signUp/signUp.service.js"></script>
+    <script src="myInfo/myInfo.controller.js"></script>
+</body>
+</html>

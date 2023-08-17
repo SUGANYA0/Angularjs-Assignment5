@@ -1,0 +1,9 @@
+<form name="myForm" ng-submit="onSubmit()">
+    First Name : <input id="fName" type="text" ng-required="true"><br><br>
+    Last Name  : <input id="lName" type="text" ng-required="true"><span ng-bind="ln"></span><br><br>
+    email address : <input id="email" type="email" ng-required="true"><br><br>
+    Phone Number : <input id="phn" type="number" ng-model="mobile_number" name="mobile_number" ng-pattern="/^[7-9][0-9]{9}$/" ng-required="true"><span ng-show="myForm.mobile_number.$error.pattern">Please enter valid number!</span><br><br>
+    Menu Number : <input id="menu" type="search" ng-model="menuNo" ng-change="menu(menuNo)" ng-required="true"><span ng-bind="reply">{{reply}}</span><br><br>
+    <input type="submit" ng-click="check(menuNo)">
+</form>
+<p ng-bind="save"></p>
